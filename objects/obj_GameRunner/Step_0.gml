@@ -2,9 +2,12 @@
 // You can write your code in this editor
 
 
+
 if (player.ReadyForMonsters == true){
 	//start wave
 alarm[0] = 1;
+var p = irandom_range(300, 800);
+alarm[2] = p;
 player.ReadyForMonsters = false;
 }
 
@@ -15,6 +18,11 @@ if (OngoingWave && !(instance_exists(obj_Monster)))
 	obj_GameRunner.alarm[1] = 100; //trigger Game Runner wave update/end level
 }
 
+
+if (health <= 0){
+	//gameover
+	game_restart();
+}
 
 
 if (player.CanMove && (player.IsAttacking==false)){
