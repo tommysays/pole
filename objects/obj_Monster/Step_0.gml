@@ -3,7 +3,13 @@
 
 if (hp <= 0){
 //animation is death!!
-instance_destroy();
+if (object_index == obj_MonsterSR){
+	sprite_index = spr_MonSR_Hit;
+	image_index = 0;
+	y= y+10;
+}
+
+
 }
 if (IsMoving){
 
@@ -20,7 +26,7 @@ if (IsMoving){
 	}
 } else if (IsAttacking){
 	//attacking animation should be playing, but right now just skipping ahead with new alarm reset
-		IsAttacking = false;
+		
 		var i = irandom_range(100,300); //reset move or attack timer to random time
 		alarm[0] = i;
 }

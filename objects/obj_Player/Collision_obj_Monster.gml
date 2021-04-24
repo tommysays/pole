@@ -3,7 +3,15 @@
 if (other.IsGettingHit == false && IsAttacking==true){
 	other.IsGettingHit = true;
 	other.hp = other.hp - 1;
-	other.alarm[1] = 200; //will not longer be hurting/invulnerable after 2 sec
+
+	if (other.object_index == obj_MonsterSR){
+		other.sprite_index = spr_MonSR_Hit;
+		other.image_index = 0;
+				
+	}else if (other.object_index == ob_MonsterLR){
+		//TO DO: add in animation for big monster
+	} 
+
 }
 
 if ((other.IsAttacking == true) && (IsHit == false)){

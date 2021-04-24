@@ -9,6 +9,8 @@ LRWaveID = 0;
 OngoingWave = false;
 health = 5; //set player's health to 5
 
+Bkgrnd1ReadytoBottom = false;
+
 //fill in waves-- this is a sample for level 1
 ds_list_add(SRMonster_Waves, 1);
 ds_list_add(SRMonster_Waves, 2);
@@ -21,6 +23,7 @@ ds_list_add(LRMonster_Waves, 1);
 ds_list_add(LRMonster_Waves, 2);
 //
 
+	layer_vspeed("Background_Main1", -0.25);
 
 
 

@@ -2,6 +2,27 @@
 // You can write your code in this editor
 
 
+//background movement
+
+show_debug_message("Main1 y is " + string(layer_get_y("Background_Main1")));
+
+if ((layer_get_y("Background_Main1") <= -1152)&&(Bkgrnd1ReadytoBottom=false))
+{
+	layer_y("Background_Main2",1152);
+	layer_vspeed("Background_Main2", -0.25);
+	Bkgrnd1ReadytoBottom = true;
+	//layer_y("Background_Main1", layer_get_y("Background_Main1") -10);
+} else if (layer_get_y("Background_Main2") <= -1152) && (Bkgrnd1ReadytoBottom == true)
+{
+	
+	layer_y("Background_Main1",1152);
+		layer_vspeed("Background_Main1", -0.25);
+	Bkgrnd1ReadytoBottom = false;
+}
+
+
+
+
 
 if (player.ReadyForMonsters == true){
 	//start wave
