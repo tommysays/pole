@@ -9,7 +9,8 @@ if (other.IsGettingHit == false && IsAttacking==true){
 		other.image_index = 0;
 				
 	}else if (other.object_index == ob_MonsterLR){
-		//TO DO: add in animation for big monster
+		other.sprite_index = spr_MonsterLR_Hit;
+		other.image_index = 0;
 	} 
 
 }

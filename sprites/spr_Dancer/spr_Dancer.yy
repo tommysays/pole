@@ -97,8 +97,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "oldsprits",
+    "path": "folders/Sprites/oldsprits.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_Dancer",

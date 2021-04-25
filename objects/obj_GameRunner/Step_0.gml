@@ -60,15 +60,16 @@ if (player.CanMove && (player.IsAttacking==false)){
 			player.image_index = 0;
 		} 
 	
-	}if (keyboard_check(vk_shift)){ //check if space, then long range attack
+	}if (keyboard_check(vk_shift)){ //check if shift, then short range attack
 				
 		if (keyboard_check(vk_left) || keyboard_check(ord("A"))){
 			player.IsAttacking = true;
-			player.sprite_index = spr_DancerSRAttackingLeft;
+			player.sprite_index = spr_short_attack;
 			player.image_index = 0;
+			player.image_xscale=player.image_xscale*-1;
 		} else if (keyboard_check(vk_right) || keyboard_check(ord("D"))){
 			player.IsAttacking = true;
-			player.sprite_index = spr_DancerSRAttackingRight;
+			player.sprite_index = spr_short_attack;
 			player.image_index = 0;
 		} 
 	

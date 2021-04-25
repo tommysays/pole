@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_MonsterLR",
-    "path": "sprites/spr_MonsterLR/spr_MonsterLR.yy",
+    "name": "spr_MonsterLR_Idle",
+    "path": "sprites/spr_MonsterLR_Idle/spr_MonsterLR_Idle.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,7 +23,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
