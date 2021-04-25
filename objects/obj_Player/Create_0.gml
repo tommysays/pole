@@ -8,4 +8,5 @@
  IsAttacking = false;
  IsHit = false;
  Speed = 5;  //speed going up or down
+
  

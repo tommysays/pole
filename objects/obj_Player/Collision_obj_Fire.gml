@@ -7,4 +7,7 @@
 	sprite_index = spr_idle_spin;
 	IsAttacking = false;
 	alarm[2] = 1;
+	
+	audio_play_sound(PlayerHit,2,false);
+	
 	}

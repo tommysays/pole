@@ -10,7 +10,11 @@ other.invincible = true
 		other.IsGettingHit = true;
 		other.alarm[1]=5; //set hurt color blending
 		other.hp = other.hp - 1;
-
+		if (other.hp > 0){
+			audio_play_sound(EnemyHit,5,false);
+		} else{
+			audio_play_sound(EnemyDead,5,false);	
+		}
 		if (other.object_index == obj_MonsterSR){
 			other.sprite_index = spr_MonSR_Hit;
 			other.image_index = 0;
@@ -28,10 +32,12 @@ if ((other.IsAttacking == true) && (IsHit == false) && (other.image_index >= 5))
 	if (other.IsGettingHit == false){ //in case the monster is in hurt phase
 		health = health -1;
 		IsHit = true;
+		image_xscale= 1;
 		sprite_index = spr_idle_spin;
 		IsAttacking = false;
 		alarm[1] = 100;
 		alarm[2] = 1;
+		audio_play_sound(PlayerHit,2,false);
 	}
 }
 	

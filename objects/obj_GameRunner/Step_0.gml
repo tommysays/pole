@@ -54,6 +54,7 @@ if (OngoingWave && !(instance_exists(obj_Monster)))
 
 if (health <= 0){
 	//gameover
+	audio_play_sound(PlayerDead,6,false);
 	game_restart();
 }
 

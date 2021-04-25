@@ -5,7 +5,7 @@ if (SRWaveID < ds_list_size(SRMonster_Waves)) && (LRWaveID < ds_list_size(LRMons
 
 
 	var i = 0;
-
+	 audio_play_sound(Enemy_Appear,6,false);
 
 	while (i < ds_list_find_value(SRMonster_Waves, SRWaveID))
 	{
