@@ -52,12 +52,14 @@ if (player.CanMove && (player.IsAttacking==false)){
 				
 		if (keyboard_check(vk_left) || keyboard_check(ord("A"))){
 			player.IsAttacking = true;
-			player.sprite_index = spr_DancerLRAttackingLeft;
+			player.sprite_index = spr_long_attack;
 			player.image_index = 0;
 		} else if (keyboard_check(vk_right) || keyboard_check(ord("D"))){
 			player.IsAttacking = true;
-			player.sprite_index = spr_DancerLRAttackingRight;
+			player.sprite_index = spr_long_attack;
+			player.image_xscale = player.image_xscale * -1; 
 			player.image_index = 0;
+			
 		} 
 	
 	}if (keyboard_check(vk_shift)){ //check if shift, then short range attack
