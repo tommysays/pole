@@ -34,6 +34,7 @@
     {"id":{"name":"spr_Monster_Appear","path":"sprites/spr_Monster_Appear/spr_Monster_Appear.yy",},"order":15,},
     {"id":{"name":"spr_MonSR_Attacking","path":"sprites/spr_MonSR_Attacking/spr_MonSR_Attacking.yy",},"order":8,},
     {"id":{"name":"spr_Fire_Long","path":"sprites/spr_Fire_Long/spr_Fire_Long.yy",},"order":5,},
+    {"id":{"name":"spr_long_attack_right","path":"sprites/spr_long_attack_right/spr_long_attack_right.yy",},"order":3,},
     {"id":{"name":"spr_Fire_Preview","path":"sprites/spr_Fire_Preview/spr_Fire_Preview.yy",},"order":4,},
     {"id":{"name":"obj_topboundary","path":"objects/obj_topboundary/obj_topboundary.yy",},"order":5,},
     {"id":{"name":"spr_LRMonster_Appear","path":"sprites/spr_LRMonster_Appear/spr_LRMonster_Appear.yy",},"order":3,},

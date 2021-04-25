@@ -1,6 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description Spawn monsters and control Player
 
 //background movement
 
@@ -71,10 +69,8 @@ if (player.CanMove && (player.IsAttacking==false)){
 				player.image_index = 0;
 			} else if (keyboard_check(vk_right) || keyboard_check(ord("D"))){
 				player.IsAttacking = true;
-				player.sprite_index = spr_long_attack;
-				player.image_xscale = player.image_xscale * -1; 
+				player.sprite_index = spr_long_attack_right; 
 				player.image_index = 0;
-			
 			} 
 	
 		}else if (keyboard_check(vk_shift) && (player.IsHit == false)){ //check if shift, then short range attack
