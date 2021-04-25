@@ -4,9 +4,12 @@
 SRWaveID = SRWaveID+1;
 LRWaveID =LRWaveID+1;
 
-if (SRWaveID >= ds_list_size(SRMonster_Waves)){ //if ended waves
+if ((SRWaveID >= ds_list_size(SRMonster_Waves)) || (LRWaveID >= ds_list_size(LRMonster_Waves))){ //if ended waves
 	//next level
-	game_end();
+	endtransition=true;
+	
+	
+	
 	
 } else{
  alarm[0] = 1; //start next wave

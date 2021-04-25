@@ -5,6 +5,7 @@
     {"id":{"name":"spr_long_attack","path":"sprites/spr_long_attack/spr_long_attack.yy",},"order":2,},
     {"id":{"name":"Enemy_Appear","path":"sounds/Enemy_Appear/Enemy_Appear.yy",},"order":0,},
     {"id":{"name":"Sprite_Test_background","path":"sprites/Sprite_Test_background/Sprite_Test_background.yy",},"order":1,},
+    {"id":{"name":"Room_Stage2","path":"rooms/Room_Stage2/Room_Stage2.yy",},"order":2,},
     {"id":{"name":"spr_Dancer_Idle17","path":"sprites/spr_Dancer_Idle17/spr_Dancer_Idle17.yy",},"order":2,},
     {"id":{"name":"EnemyHit","path":"sounds/EnemyHit/EnemyHit.yy",},"order":3,},
     {"id":{"name":"spr_Dancer_Idle","path":"sprites/spr_Dancer_Idle/spr_Dancer_Idle.yy",},"order":1,},
@@ -31,6 +32,7 @@
     {"id":{"name":"obj_Fire","path":"objects/obj_Fire/obj_Fire.yy",},"order":4,},
     {"id":{"name":"spr_Dancer","path":"sprites/spr_Dancer/spr_Dancer.yy",},"order":0,},
     {"id":{"name":"spr_DancerLRAttackingLeft","path":"sprites/spr_DancerLRAttackingLeft/spr_DancerLRAttackingLeft.yy",},"order":3,},
+    {"id":{"name":"stage2background","path":"sprites/stage2background/stage2background.yy",},"order":20,},
     {"id":{"name":"spr_Monster_Appear","path":"sprites/spr_Monster_Appear/spr_Monster_Appear.yy",},"order":15,},
     {"id":{"name":"spr_MonSR_Attacking","path":"sprites/spr_MonSR_Attacking/spr_MonSR_Attacking.yy",},"order":8,},
     {"id":{"name":"spr_Fire_Long","path":"sprites/spr_Fire_Long/spr_Fire_Long.yy",},"order":5,},
@@ -64,6 +66,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Room_Stage2","path":"rooms/Room_Stage2/Room_Stage2.yy",},},
     {"roomId":{"name":"Room_Stage1","path":"rooms/Room_Stage1/Room_Stage1.yy",},},
     {"roomId":{"name":"Room_Intro","path":"rooms/Room_Intro/Room_Intro.yy",},},
   ],

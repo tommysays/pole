@@ -1,6 +1,18 @@
 /// @description Spawn monsters and control Player
 
 //background movement
+score = score+1;
+
+if(endtransition == true)
+{
+player.y = player.y +25
+player.IsHit = true;
+if player.y > room_height{
+	
+room_goto_next();	
+}
+
+}
 
 var w = 0;
 
@@ -57,7 +69,7 @@ if (health <= 0){
 }
 
 
-if (player.CanMove && (player.IsAttacking==false)){
+if (player.CanMove && (player.IsAttacking==false)&& (endtransition==false)){
 
 	
 	
