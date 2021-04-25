@@ -7,8 +7,7 @@ IsGettingHit = false;
 
 //play startanimation
 
-var i = irandom_range(100,300);
-alarm[0] = i;
+
 
 //variablesformoving
 NewY = 64;

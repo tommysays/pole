@@ -6,11 +6,11 @@ if (hp <= 0){
 if (object_index == obj_MonsterSR){
 	sprite_index = spr_MonSR_Hit;
 	image_index = 0;
-	y= y+10;
+	y= y+15;
 } else if (object_index == ob_MonsterLR){
 	sprite_index = spr_MonsterLR_Hit;
 	image_index = 0;
-	y= y+10;
+	y= y+15;
 }
 
 

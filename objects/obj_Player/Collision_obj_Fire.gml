@@ -4,4 +4,7 @@
 	health = health -1;
 	IsHit = true;
 	alarm[1] = 200;
+	sprite_index = spr_idle_spin;
+	IsAttacking = false;
+	alarm[2] = 1;
 	}
