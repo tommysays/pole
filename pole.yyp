@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_long_attack","path":"sprites/spr_long_attack/spr_long_attack.yy",},"order":18,},
     {"id":{"name":"spr_short_attack","path":"sprites/spr_short_attack/spr_short_attack.yy",},"order":17,},
     {"id":{"name":"Sprite_Test_background","path":"sprites/Sprite_Test_background/Sprite_Test_background.yy",},"order":1,},
     {"id":{"name":"spr_Dancer_Idle17","path":"sprites/spr_Dancer_Idle17/spr_Dancer_Idle17.yy",},"order":16,},
