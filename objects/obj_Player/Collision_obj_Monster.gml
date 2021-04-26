@@ -35,7 +35,7 @@ if ((other.IsAttacking == true) && (IsHit == false) && (other.image_index >= 5))
 		image_xscale= 1;
 		sprite_index = spr_idle_spin;
 		IsAttacking = false;
-		alarm[1] = 100;
+		alarm[1] = 0.5 * room_speed;
 		alarm[2] = 1;
 		audio_play_sound(PlayerHit,2,false);
 	}

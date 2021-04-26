@@ -24,7 +24,7 @@ wave[1] = {
 	spawnY: room_height + 300
 };
 waves[waveIndex] = wave;
-waveDurations[waveIndex] = 10;
+waveDurations[waveIndex] = 9;
 waveIndex++;
 
 wave = array_create(2);
@@ -39,7 +39,7 @@ wave[1] = {
 	spawnY: room_height + 300
 };
 waves[waveIndex] = wave;
-waveDurations[waveIndex] = 10;
+waveDurations[waveIndex] = 9;
 waveIndex++;
 
 wave = array_create(2);
@@ -54,7 +54,7 @@ wave[1] = {
 	spawnY: room_height + 300
 };
 waves[waveIndex] = wave;
-waveDurations[waveIndex] = 11;
+waveDurations[waveIndex] = 10;
 waveIndex++;
 
 alarm[0] = 1;
