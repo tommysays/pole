@@ -15,7 +15,6 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_GameRunner","path":"objects/obj_GameRunner/obj_GameRunner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":32.0,"resourceVersion":"1.0","name":"inst_420D1140","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_MonsterSR","path":"objects/obj_MonsterSR/obj_MonsterSR.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":256.0,"resourceVersion":"1.0","name":"inst_29C28373","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_topboundary","path":"objects/obj_topboundary/obj_topboundary.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.40625,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-192.0,"y":-64.0,"resourceVersion":"1.0","name":"inst_376E2319","tags":[],"resourceType":"GMRInstance",},
@@ -43,7 +42,6 @@
     {"name":"inst_72925706","path":"rooms/Room_Stage1/Room_Stage1.yy",},
     {"name":"inst_420D1140","path":"rooms/Room_Stage1/Room_Stage1.yy",},
     {"name":"inst_7BD1F274","path":"rooms/Room_Stage1/Room_Stage1.yy",},
-    {"name":"inst_29C28373","path":"rooms/Room_Stage1/Room_Stage1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
