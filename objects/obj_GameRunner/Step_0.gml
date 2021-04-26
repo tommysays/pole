@@ -1,9 +1,12 @@
 /// @description Manage waves and rooms.
 
 //background movement
+if (gameover == false){
 score = score+1;
+}
 
 if (endtransition == true) {
+	health = 5;
 	player.y = player.y + 15;
 	player.CanMove = true;
 	player.sprite_index = spr_idle_spin;
@@ -37,8 +40,35 @@ if (OngoingWave && !instance_exists(obj_Monster)) {
 }
 
 
-if (health <= 0){
+if (health <= 0)&&(gameover==false){
 	//gameover
+	
+	gameover = true;
+	audio_stop_all();
 	audio_play_sound(PlayerDead,6,false);
-	game_restart();
+	go_screen = instance_create_layer(0,0,"Instances",obj_gameoverscreen);
+	go_screen.image_alpha = 0
+	
+	instance_destroy(obj_Fire);
+	instance_destroy(obj_Monster);
+	instance_destroy(obj_pole_spinning);
+	player.CanMove = false;
+	
+} else if  (gameover==true){
+
+gameover_fade = gameover_fade+1;
+	if ((gameover_fade/gameover_fadetime>=1) && gameover_done == false)
+	{
+		gameover_done = true;
+		
+		alarm[3]=1;
+		
+	}else
+	{
+	go_screen.image_alpha = gameover_fade/gameover_fadetime;
+	}
+	
 }
+	//fadetoblack
+	
+

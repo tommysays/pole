@@ -3,7 +3,7 @@
 
 if (SRWaveID < ds_list_size(SRMonster_Waves)) && (LRWaveID < ds_list_size(LRMonster_Waves)) {
 	var i = 0;
-	audio_play_sound(Enemy_Appear,6,false);
+	audio_play_sound(newenemyappear,6,false);
 
 	while (i < ds_list_find_value(SRMonster_Waves, SRWaveID)) {
 		var row = irandom_range(0,3);
