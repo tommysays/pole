@@ -6,6 +6,7 @@
     {"id":{"name":"spr_short_attack","path":"sprites/spr_short_attack/spr_short_attack.yy",},"order":1,},
     {"id":{"name":"spr_long_attack","path":"sprites/spr_long_attack/spr_long_attack.yy",},"order":2,},
     {"id":{"name":"spr_Button","path":"sprites/spr_Button/spr_Button.yy",},"order":23,},
+    {"id":{"name":"obj_Exit_Handler","path":"objects/obj_Exit_Handler/obj_Exit_Handler.yy",},"order":12,},
     {"id":{"name":"spr_title_page","path":"sprites/spr_title_page/spr_title_page.yy",},"order":22,},
     {"id":{"name":"Enemy_Appear","path":"sounds/Enemy_Appear/Enemy_Appear.yy",},"order":0,},
     {"id":{"name":"obj_gameoverscreen","path":"objects/obj_gameoverscreen/obj_gameoverscreen.yy",},"order":10,},
