@@ -13,31 +13,34 @@ if (Starting && !IsIntroPage) {
 
 // Player input handling.
 if (CanMove && !IsAttacking) {
-	var inputLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
-	var inputRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 	var inputDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
 	var inputUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
+	var inputLongAttack = keyboard_check(vk_space);
+	var inputShortAttack = keyboard_check(vk_shift);
+
+	var facingLeft = false;
+	if (sprite_index == spr_idle_spin) {
+		facingLeft = image_index >= 4;
+	}
 	
 	// Long range attack.
-	if (keyboard_check(vk_space) && !IsHit) {
-		if (inputLeft) {
-			IsAttacking = true;
+	if (inputLongAttack && !IsHit) {
+		IsAttacking = true;
+		if (facingLeft) {
 			sprite_index = spr_long_attack;
 			image_index = 0;
-		} else if (inputRight) {
-			IsAttacking = true;
+		} else {
 			sprite_index = spr_long_attack_right;
 			image_index = 0;
 		}
 	// Short range attack.
-	} else if (keyboard_check(vk_shift) && !IsHit) {
-		if (inputLeft) {
-			IsAttacking = true;
+	} else if (inputShortAttack && !IsHit) {
+		IsAttacking = true;
+		if (facingLeft) {
 			sprite_index = spr_short_attack;
 			image_index = 0;
 			image_xscale=image_xscale*-1;
-		} else if (inputRight) {
-			IsAttacking = true;
+		} else {
 			sprite_index = spr_short_attack;
 			image_index = 0;
 		}

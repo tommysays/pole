@@ -1,4 +1,4 @@
-/// @description Spawn monsters and control Player
+/// @description Manage waves and rooms.
 
 //background movement
 score = score+1;
@@ -14,15 +14,10 @@ if (endtransition == true) {
 }
 
 // Infinite scrolling background.
-if (layer_get_y("Background_Main1") <= -1152 && !Bkgrnd1ReadytoBottom) {
-	layer_y("Background_Main2",1152);
-	layer_vspeed("Background_Main2", -0.25);
-	Bkgrnd1ReadytoBottom = true;
-	//layer_y("Background_Main1", layer_get_y("Background_Main1") -10);
-} else if (layer_get_y("Background_Main2") <= -1152 && Bkgrnd1ReadytoBottom) {
+if (layer_get_y("Background_Main1") <= -2304) {
 	layer_y("Background_Main1",1152);
-	layer_vspeed("Background_Main1", -0.25);
-	Bkgrnd1ReadytoBottom = false;
+} else if (layer_get_y("Background_Main2") <= -2304) {
+	layer_y("Background_Main2",1152);
 }
 
 
