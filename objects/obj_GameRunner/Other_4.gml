@@ -11,6 +11,10 @@ SRWaveID = 0;
 LRWaveID = 0;
 OngoingWave = false;
 endtransition = false;
+gameover = false;
+gameover_fade = 0;
+gameover_fadetime = 100;
+gameover_done = false;
 
 health = 5; //set player's health to 5
 
