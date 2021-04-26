@@ -10,7 +10,7 @@ ds_list_clear(LRMonster_Waves);
 SRWaveID = 0;
 LRWaveID = 0;
 OngoingWave = false;
-endtransition=false;
+endtransition = false;
 
 health = 5; //set player's health to 5
 
