@@ -4,31 +4,22 @@
 score = score+1;
 
 if (endtransition == true) {
-	player.y = player.y +25
-	player.IsHit = true;
+	player.y = player.y + 15;
+	player.CanMove = true;
+	player.sprite_index = spr_idle_spin;
+	player.image_index = 0;
 	if (player.y > room_height) {
 		room_goto_next();	
 	}
 }
 
-var w = 0;
-
-while (w < 4) {
-	var e = random_range(0,256);
-	var d = irandom_range(0,8);
-	if (d == 0){
-		instance_create_layer((e+(256* w)), room_height, "Instances_1",obj_bckgrnd_bit);
-	}
-	w=w+1;
-}
-
 // Infinite scrolling background.
-if ((layer_get_y("Background_Main1") <= -1152) && Bkgrnd1ReadytoBottom == false) {
+if (layer_get_y("Background_Main1") <= -1152 && !Bkgrnd1ReadytoBottom) {
 	layer_y("Background_Main2",1152);
 	layer_vspeed("Background_Main2", -0.25);
 	Bkgrnd1ReadytoBottom = true;
 	//layer_y("Background_Main1", layer_get_y("Background_Main1") -10);
-} else if ((layer_get_y("Background_Main2") <= -1152) && Bkgrnd1ReadytoBottom == true) {
+} else if (layer_get_y("Background_Main2") <= -1152 && Bkgrnd1ReadytoBottom) {
 	layer_y("Background_Main1",1152);
 	layer_vspeed("Background_Main1", -0.25);
 	Bkgrnd1ReadytoBottom = false;
@@ -36,7 +27,7 @@ if ((layer_get_y("Background_Main1") <= -1152) && Bkgrnd1ReadytoBottom == false)
 
 
 
-if (player.ReadyForMonsters == true) {
+if (player.ReadyForMonsters) {
 	//start wave
 	alarm[0] = 1;
 	var p = irandom_range(300, 800);
@@ -56,39 +47,3 @@ if (health <= 0){
 	audio_play_sound(PlayerDead,6,false);
 	game_restart();
 }
-
-
-if (player.CanMove && !player.IsAttacking && !endtransition) {
-	if (keyboard_check(vk_space) &&(player.IsHit == false)){ //check if space, then long range attack
-		if (keyboard_check(vk_left) || keyboard_check(ord("A"))) {
-			player.IsAttacking = true;
-			player.sprite_index = spr_long_attack;
-			player.image_index = 0;
-		} else if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
-			player.IsAttacking = true;
-			player.sprite_index = spr_long_attack_right;
-			player.image_index = 0;
-		}
-	
-	} else if (keyboard_check(vk_shift) && (player.IsHit == false)) { //check if shift, then short range attack
-		if (keyboard_check(vk_left) || keyboard_check(ord("A"))) {
-			player.IsAttacking = true;
-			player.sprite_index = spr_short_attack;
-			player.image_index = 0;
-			player.image_xscale=player.image_xscale*-1;
-		} else if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
-			player.IsAttacking = true;
-			player.sprite_index = spr_short_attack;
-			player.image_index = 0;
-		}
-	} else if (keyboard_check(vk_down) || keyboard_check(ord("S"))) {
-		if (player.y+player.Speed+(player.sprite_height/2) < room_height) {
-			player.y = player.y + player.Speed;
-		}
-	} else if(keyboard_check(vk_up) || keyboard_check(ord("W"))) {
-		if (player.y-player.Speed-(player.sprite_height/2) >= 0 ) {
-			player.y = player.y - player.Speed;
-		}
-	}
-}
-

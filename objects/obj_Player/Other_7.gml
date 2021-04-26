@@ -18,4 +18,3 @@ if (sprite_index == spr_long_attack){
 	image_speed = 0;
 	alarm[3] = 100;
 }
-
