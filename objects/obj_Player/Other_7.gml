@@ -1,13 +1,23 @@
 /// @description Transition from attack to idle.
 
 if (sprite_index == spr_long_attack) {
-	sprite_index = spr_idle_spin;
-	image_index = 0;
-	IsAttacking = false;
+	if (IsThroneRoom) {
+		sprite_index = spr_long_attack_right;
+		image_index = 0;
+	} else {	
+		sprite_index = spr_idle_spin;
+		image_index = 0;
+		IsAttacking = false;
+	}
 } else if (sprite_index == spr_long_attack_right) {
-	sprite_index = spr_idle_spin;
-	image_index = 4;
-	IsAttacking = false;
+	if (IsThroneRoom) {
+		sprite_index = spr_long_attack;
+		image_index = 0;
+	} else {
+		sprite_index = spr_idle_spin;
+		image_index = 4;
+		IsAttacking = false;
+	}
 } else if (sprite_index == spr_short_attack) {
 	sprite_index = spr_idle_spin;
 	image_index = image_xscale < 0 ? 7 : 3;

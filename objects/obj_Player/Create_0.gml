@@ -9,4 +9,8 @@
  IsHit = false;
  Speed = 5;  //speed going up or down
 
- 
+if (IsThroneRoom) {
+	sprite_index = spr_long_attack;
+	image_index = 0;
+	image_speed = 1;
+}

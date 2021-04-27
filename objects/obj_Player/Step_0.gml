@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (Starting && !IsIntroPage) {
+if (IsThroneRoom || IsIntroPage) {
+	return;
+}
+
+if (Starting) {
     y = y + 3;
 	if (y >= room_height / 2) {
 		Starting = false;
