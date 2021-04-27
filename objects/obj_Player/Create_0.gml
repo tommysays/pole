@@ -10,6 +10,8 @@
  Speed = 5;  //speed going up or down
 
 if (IsThroneRoom) {
+	Starting = false;
+	
 	sprite_index = spr_long_attack;
 	image_index = 0;
 	image_speed = 1;

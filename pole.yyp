@@ -90,11 +90,11 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Room_Throne","path":"rooms/Room_Throne/Room_Throne.yy",},},
     {"roomId":{"name":"Room_Intro","path":"rooms/Room_Intro/Room_Intro.yy",},},
     {"roomId":{"name":"Room_Tutorial","path":"rooms/Room_Tutorial/Room_Tutorial.yy",},},
     {"roomId":{"name":"Room_Stage1","path":"rooms/Room_Stage1/Room_Stage1.yy",},},
     {"roomId":{"name":"Room_Stage2","path":"rooms/Room_Stage2/Room_Stage2.yy",},},
-    {"roomId":{"name":"Room_Throne","path":"rooms/Room_Throne/Room_Throne.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
