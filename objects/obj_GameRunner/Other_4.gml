@@ -2,8 +2,8 @@
 // You can write your code in this editor
 randomize(); //TO DO: maybe move to the very start of game
 
-
-if (room_get_name(room) == "Room_Throne") {
+var roomName = room_get_name(room);
+if (roomName == "Room_Throne" || roomName = "Room_Intro") {
 	instance_destroy();
 	return;
 }
