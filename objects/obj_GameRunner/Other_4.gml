@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomize(); //TO DO: maybe move to the very start of game
+
+
+if (room_get_name(room) == "Room_Throne") {
+	instance_destroy();
+	return;
+}
+
 player = instance_create_layer(512, 0, "Instances", obj_Player);
 SRMonster_Waves = ds_list_create();
 ds_list_clear(SRMonster_Waves);

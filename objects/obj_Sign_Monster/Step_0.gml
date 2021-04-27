@@ -7,7 +7,9 @@ switch (state) {
 		if (nextY <= VerticalDestination) {
 			nextY = VerticalDestination;
 			state = SignMonsterState.WAITING;
-			alarm[0] = room_speed * LeaveDelay;
+			if (LeaveDelay > 0) {
+				alarm[0] = room_speed * LeaveDelay;
+			}
 		} else {
 			y = nextY;
 		}
